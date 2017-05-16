@@ -28,8 +28,7 @@ while inputToProcess == "" {
     print("Ask the question here? ", terminator: "")
     
     // Get the user's input
-    var input : String?
-    input = readLine()
+    var input = readLine()
     
     // Use optional binding to see if the string can be unwrapped (to see if it is not nil)
     if let notNilInput = input {
