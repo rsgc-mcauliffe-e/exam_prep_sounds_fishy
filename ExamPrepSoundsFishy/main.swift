@@ -19,12 +19,12 @@ Be sure that your implementation of this section discards all the possible bad i
 Make use of your test plan and algorithm to ensure your code is complete.
 
 */
-var inputToProcess : [Int] = [0,0,0]
-
+var inputToProcess : [Int] = [0,0,0,0]
+var output = String()
 
 
 // Loop until valid input is received
-for ii in 0...2 {
+for ii in 0...3 {
 	while inputToProcess[ii] == 0 {
 		
 		// Show the prompt
@@ -54,8 +54,15 @@ Make use of your test plan and algorithm to ensure your code is complete.
 */
 
 // Add 'process' code below....
-print("replace with process logic")
-
+if (inputToProcess[0] < inputToProcess[1] && inputToProcess [1] < inputToProcess[2] && inputToProcess[2] < inputToProcess[3]){
+		output = "Fish Rising"
+} else if (inputToProcess[3] < inputToProcess[2] && inputToProcess[2] < inputToProcess [1] && inputToProcess[1] < inputToProcess[0]){
+		output = "Fish Diving"
+} else if (inputToProcess[3] == inputToProcess[2] && inputToProcess[2] == inputToProcess [1] && inputToProcess[1] == inputToProcess[0]){
+	output = "Fish At Constant Depth"
+} else {
+	output = "No Fish"
+}
 
 /*
 
@@ -68,4 +75,4 @@ Make use of your test plan and algorithm to ensure your code is complete.
 */
 
 // Add 'output' code below... replace what is here as needed.
-print("The input given was: \(inputToProcess)")
+print(output)
