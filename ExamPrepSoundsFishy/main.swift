@@ -55,9 +55,9 @@ Make use of your test plan and algorithm to ensure your code is complete.
 
 // Add 'process' code below....
 if (inputToProcess[0] < inputToProcess[1] && inputToProcess [1] < inputToProcess[2] && inputToProcess[2] < inputToProcess[3]){
-		output = "Fish Rising"
+	output = "Fish Rising"
 } else if (inputToProcess[3] < inputToProcess[2] && inputToProcess[2] < inputToProcess [1] && inputToProcess[1] < inputToProcess[0]){
-		output = "Fish Diving"
+	output = "Fish Diving"
 } else if (inputToProcess[3] == inputToProcess[2] && inputToProcess[2] == inputToProcess [1] && inputToProcess[1] == inputToProcess[0]){
 	output = "Fish At Constant Depth"
 } else {
